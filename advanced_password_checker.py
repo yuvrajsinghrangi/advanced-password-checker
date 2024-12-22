@@ -102,24 +102,30 @@ def show_history():
 root = Tk()
 root.title("Advanced Password Strength Checker")
 root.geometry("600x400")
-root.configure(bg="#ffffff")
+root.configure(bg="#f4f4f4")
 
 # Title
-Label(root, text="Advanced Password Strength Checker", font=("Arial", 16, "bold"), bg="#FFFFFF").pack(pady=10)
+Label(root, text="Advanced Password Strength Checker", font=("Arial", 16, "bold"), bg="#f4f4f4").pack(pady=10)
 
 # Password input field
-Label(root, text="Enter your password:", font=("Arial", 12), bg="#FFFFFF").pack(pady=5)
+Label(root, text="Enter your password:", font=("Arial", 12), bg="#f4f4f4").pack(pady=5)
 password_entry = Entry(root, show="*", font=("Arial", 12), width=30)
 password_entry.pack(pady=5)
 password_entry.bind("<KeyRelease>", evaluate_password)
 
 # Buttons
-Button(root, text="Generate Strong Password", command=display_generated_password, font=("Arial", 10), bg="#007BFF", fg="Black").pack(pady=5)
-Button(root, text="Show Password History", command=show_history, font=("Arial", 10), bg="#28a745", fg="Black").pack(pady=5)
+Button(root, text="Generate Strong Password", command=display_generated_password, font=("Arial", 10), bg="#007BFF", fg="white").pack(pady=5)
+Button(root, text="Show Password History", command=show_history, font=("Arial", 10), bg="#28a745", fg="white").pack(pady=5)
 
+# Output labels
+strength_label = Label(root, text="", font=("Arial", 12, "bold"), bg="#f4f4f4", fg="black")
+strength_label.pack(pady=10)
+
+suggestions_label = Label(root, text="", font=("Arial", 10), bg="#f4f4f4", fg="red")
+suggestions_label.pack()
 
 # Footer with credit
-Label(root, text="Made by Yuvraj Singh Rangi", font=("Arial", 10), bg="#ffffff").pack(side="bottom", pady=10)
+Label(root, text="Made by Yuvraj Singh Rangi", font=("Arial", 10), bg="#f4f4f4", fg="gray").pack(side="bottom", pady=10)
 
 # Run the GUI
 root.mainloop()
