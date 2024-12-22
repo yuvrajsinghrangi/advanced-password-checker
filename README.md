@@ -56,4 +56,6 @@ Once satisfied, the user can close the application, knowing that their password 
 # Conclusion:
 The Advanced Password Strength Checker empowers users to create stronger, more secure passwords by providing real-time analysis and suggestions. With an easy-to-use GUI and advanced evaluation criteria, this tool is an essential resource for anyone looking to improve their online security. By combining Python programming skills with cybersecurity principles, this project demonstrates how technology can make digital environments safer.
 
+# Screenshot
+
 <img width="605" alt="Screenshot 2024-12-22 at 8 10 23 PM" src="https://github.com/user-attachments/assets/8ee8908b-dc3d-47fe-8a5d-de94092890db" />
