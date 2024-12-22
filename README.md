@@ -16,7 +16,7 @@ The Advanced Password Strength Checker is a Python-based tool designed to evalua
 
 7. Security Best Practices: The tool follows common security practices, such as avoiding easily guessable passwords or patterns, and promoting the use of special characters, numbers, and mixed case letters.
 
-# ------------------------------------------------------ How It Works: Step-by-Step --------------------------------------------------------------
+# ------------------------ How It Works: Step-by-Step -------------------------
 
 # Step 1: Launch the Application
 When the user launches the application, they are greeted with a simple and clean GUI built using Python’s Tkinter library. The interface consists of a password input field, a strength indicator (weak, medium, strong), and an area for displaying suggestions.
